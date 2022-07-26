@@ -1,0 +1,88 @@
+@use './var'as var;
+@use './mixin' as mixin;
+@use './basic';
+// ------------------------------------------- class_setting
+
+.title {
+  @include mixin.container-style(95%, 15%, flex-start, center);
+}
+
+.title-text {
+  @include mixin.font(2.5rem, 600, var.$col-1);
+}
+
+.container {
+  @include mixin.container-style(100%, 85%, center, center);
+}
+
+.list {
+  list-style-type: none;
+  position: relative;
+  @include mixin.container-style(100%, 100%, space-around, center);
+}
+
+
+// ------------------------------------------- class_setting
+
+#root {
+  @include mixin.root;
+  @include mixin.flex(center, center, column);
+}
+
+#left-box{
+  @include mixin.container-style(85%, 100%, center, center);
+  // border:var.$solid-gray ;
+  color: var.$col-dark-gray;
+}
+
+#list  { 
+  @for $i from 1 through 5{
+    &>li:nth-child(#{$i}){
+      @include mixin.box-style(150px, 150px, var.$col-gray, 50%);
+      @include mixin.flex(center,center);
+    } 
+  }
+
+  &>li:nth-child(1){
+    @include mixin.position(absolute, 15%, 5%, 1);
+  }
+
+  &>li:nth-child(2){
+    @include mixin.position(absolute, 18%, 60%, 1 );
+  }
+
+  &>li:nth-child(3){
+    @include mixin.position(absolute, 45%, 30%, 1 );
+  }
+
+  &>li:nth-child(4){
+    @include mixin.position(absolute, 70%, 5%, 1 );
+  }
+
+  &>li:nth-child(5){
+    @include mixin.position(absolute, 75%, 60%, 1);
+  }
+
+  &>li:nth-child(6){
+    @include mixin.box-style(80px, 80px, var.$col-gray, 50%);
+    @include mixin.position(absolute, 5%, 40%, 1);
+  }
+
+}
+
+#right-box{
+  @include mixin.container-style(15%,100%, space-around, center, column);
+  position: relative;
+  // border:var.$solid-gray ;
+  overflow: hidden  ;
+
+  &>div:nth-child(1){
+    padding-left: 4vw;
+    @include mixin.box-style(300px, 300px, var.$col-gray, 50%);
+    @include mixin.flex(flex-start, center);
+    @include mixin.font(1.5rem, 400, var.$col-dark-gray);
+    position: fixed;
+    right: -10%;
+  }
+}
+
