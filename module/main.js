@@ -66,11 +66,11 @@
 
 
 
-function mainContents(props) {
+function mainContentsComp(props) {
   props = typeof props === 'object' ? props : console.log('type error');
   return(`
-  <${props.tag} id="left-box">
-        <ul id="list" class="list">
+  <${props.tag} id="${props.idLeftBox}">
+        <ul id="${props.idList}" class="list">
           <li>Character</li>
           <li>Intention</li>
           <li>Profile</li>
@@ -79,9 +79,24 @@ function mainContents(props) {
           <li></li>
         </ul>
       </${props.tag}>
-      <${props.tag} id="right-box">
+      <${props.tag} id="${props.idRightBox}">
         <div>menu</div>
       </${props.tag}>
   `
   );
 }
+
+const mainContentsObj = {
+  tag : 'div',
+  idLeftBox : 'left-box' ,
+  idList :'list',
+  idRightBox : 'right-box'
+}
+
+const mainContent = ()=>{
+  return(
+    `${mainContentsComp(mainContentsObj)}`
+  );
+}
+
+export default mainContent();

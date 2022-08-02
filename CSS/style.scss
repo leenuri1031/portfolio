@@ -82,7 +82,7 @@
     @include mixin.flex(flex-start, center);
     @include mixin.font(1.5rem, 400, var.$col-dark-gray);
     position: fixed;
-    right: -10%;
+    right: -7%;
   }
 }
 

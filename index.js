@@ -1,3 +1,4 @@
+import mainContent from "./module/main.js"
 
 const root = document.getElementById('root');
 const sections = root.children;
@@ -8,3 +9,4 @@ const sections = root.children;
 
 // sections[0].innerHTML = `<h1 class="title-text">El mundo's portfolio</h1>`;
 
+sections[1].innerHTML = mainContent ; 
