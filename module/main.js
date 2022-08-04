@@ -79,9 +79,6 @@ function mainContentsComp(props) {
           <li></li>
         </ul>
       </${props.tag}>
-      <${props.tag} id="${props.idRightBox}">
-        <div>menu</div>
-      </${props.tag}>
   `
   );
 }
@@ -90,7 +87,6 @@ const mainContentsObj = {
   tag : 'div',
   idLeftBox : 'left-box' ,
   idList :'list',
-  idRightBox : 'right-box'
 }
 
 const mainContent = ()=>{

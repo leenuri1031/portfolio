@@ -15,6 +15,16 @@
   @include mixin.container-style(100%, 85%, center, center);
 }
 
+.content-page {
+  @include mixin.container-style(85%, 100%, space-around, center);
+  // background-color: antiquewhite;
+}
+
+.menu {
+  @include mixin.container-style(15%, 100%, center, center);
+  // background-color: aqua;
+}
+
 .list {
   list-style-type: none;
   position: relative;

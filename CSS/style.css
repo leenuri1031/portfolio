@@ -28,6 +28,24 @@
   flex-direction: row;
 }
 
+.content-page {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.menu {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 .list {
   list-style-type: none;
   position: relative;
