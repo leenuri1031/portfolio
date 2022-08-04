@@ -32,6 +32,8 @@
 }
 
 
+
+
 // ------------------------------------------- class_setting
 
 #root {
@@ -95,4 +97,27 @@
     right: -7%;
   }
 }
+
+#img-box{
+  @include mixin.container-style(35%,90%, flex-start, center, column);
+  padding: 5vh;
+
+  position: relative;
+
+  &>div:first-child{
+    @include mixin.box-style(350px, 350px, var.$col-gray, 50%);
+    @include mixin.flex(center, center);
+  }
+
+  &>div:last-child{
+    @include mixin.box-style(150px, 150px, var.$col-gray, 50%);
+    @include mixin.position(absolute, 20%, 70%, 1);
+  }
+}
+
+#text-box{
+  @include mixin.container-style(60%,90%, space-around, center, column);
+
+}
+
 
