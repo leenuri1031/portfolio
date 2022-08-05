@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+* {
+  transition: 1s;
+}
+
 .title {
   width: 95%;
   height: 15%;
