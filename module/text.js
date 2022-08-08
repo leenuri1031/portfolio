@@ -17,3 +17,21 @@ export const career = `
 2020.10-2021.09   아와지시마 인터네셔널 호텔 </br>
 2022.08 -   현재     휴먼코스메틱(주) 웹디자이너
 `;
+
+export const hobby = `
+독서 (추리 / 공상과학 / 일상 / 힐링 / 판타지) </br>
+그림그리기 (수채화 /  아크릴화) </br>
+다이어리 쓰기 / 스케쥴러 작성하기
+`;
+
+export const like = `
+여행 </br>
+고양이 </br>
+뒹굴뒹굴 </br>
+`;
+
+export const motto = `
+Qué sará, sará  ( Whatever will be will be )  </br>                               
+일어나게 될 일은 일어나게 되어있으니 사서 걱정하지 말고 긍정적인 </br>
+생각으로 가득하게 생활 하자 !
+`;

@@ -16,19 +16,19 @@ function profiletextContentsComp(props) {
   return(` 
   <${props.tag} id="${props.textId}">
     <${props.tag}>
-      <${props.tag} class="${props.subClass}">sub-title</${props.tag}>
+      <${props.tag} class="${props.subClass}">Education</${props.tag}>
       <${props.tag} class="${props.textClass}">
         <p>${education}</p>
       </${props.tag}>
     </${props.tag}>
     <${props.tag}>
-      <${props.tag} class="${props.subClass}">sub-title</${props.tag}>
+      <${props.tag} class="${props.subClass}">Introduce</${props.tag}>
       <${props.tag} class="${props.textClass}">
         <p>${introduce}</p>
       </${props.tag}>
     </${props.tag}>
     <${props.tag}>
-      <${props.tag} class="${props.subClass}">sub-title</${props.tag}>
+      <${props.tag} class="${props.subClass}">Career</${props.tag}>
       <${props.tag} class="${props.textClass}">
         <p>${career}</p>
       </${props.tag}>

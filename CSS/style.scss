@@ -120,6 +120,7 @@
     @include mixin.font(1.5rem, 400, var.$col-dark-gray);
     position: fixed;
     right: -7%;
+    line-height: 250%;
   }
 }
 
@@ -192,23 +193,23 @@
 }
 
 #left-img {
-  @include mixin.container-style(35%,90%, space-evenly, center, column);
+  @include mixin.container-style(35%,80%, space-evenly, center, column);
+  position: relative;
+  &>div:last-child{
+    @include mixin.box-style(120px, 120px, var.$col-gray, 50%);
+    @include mixin.position(absolute, 10%, 90%, 1);
+  }
   
 }
 
 #right-text {
   @include mixin.container-style(60%, 90%, space-evenly, center, column);
-  // @for $i from 1 through 5{
-  //   &>li:nth-child(#{$i}){
-  //     @include mixin.box-style(150px, 150px, var.$col-gray, 50%);
-  //     @include mixin.flex(center,center);
-  //   } 
-  // }
-  &> div{
-    @include mixin.container-style(100%, 30%, space-around, flex-start, column);
-    border: var.$solid-gray;
+  position: relative;
 
-    @for $i from 1 through 3{
+  @for $i from 1 through 3 {
+    &>div:nth-child(#{$i}){
+      @include mixin.container-style(100%, 30%, space-around, flex-start, column);
+
       &>div:nth-child(1){
         @include mixin.size(40%, 10%);
         @include mixin.font(1.1rem, 600, var.$col-7);
@@ -217,10 +218,21 @@
       
       &>div:nth-child(2){
         @include mixin.size(80%, 50%);
-
+        line-height: 200%;
       }
-    } 
+    }
   }
+
+  &>div:nth-child(4){
+    @include mixin.box-style(150px, 150px, var.$col-gray, 50%);
+    @include mixin.position(absolute, 70%, -10%, 1);
+  }
+
+  &>div:nth-child(5){
+    @include mixin.box-style(120px, 120px, var.$col-gray, 50%);
+    @include mixin.position(absolute, 90%, 80%, 1);
+  }
+
 }
 
 
