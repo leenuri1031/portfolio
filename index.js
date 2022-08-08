@@ -15,5 +15,5 @@ const menu = sections[1].children[1];
 console.log(menu);
 console.log(pageContent);
 
-pageContent.innerHTML = `${profileContent}` ; 
+// pageContent.innerHTML = `${profileContent}` ; 
 menu.innerHTML = `${menuContent}` ;

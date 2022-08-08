@@ -20,3 +20,9 @@ function first(tagName, parent, tagContent ="") {
   parent.appendChild(setElem);
   // parent 의 자식으로 지정해 놓은 setElem을 생성해줌
 }
+
+const pokemonArr = ["피카츄", "라이츄", "파이리", "꼬부기", "버터풀", "야도란", "피죤투", "또가스"];
+
+for(let i = 0; i < pokemonArr.length; i++) { 
+  console.log(pokemonArr[i]);
+}

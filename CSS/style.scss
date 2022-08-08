@@ -5,7 +5,7 @@
 
 .title {
   @include mixin.container-style(95%, 15%, flex-start, center);
-}
+} 
 
 .title-text {
   @include mixin.font(2.5rem, 600, var.$col-1);
@@ -40,6 +40,10 @@
   }
 }
 
+.img-style {
+  @include mixin.box-style(150px, 150px, var.$col-gray, 50%);
+  @include mixin.flex(center, center);
+}
 
 .menu {
   @include mixin.container-style(15%, 100%, center, center);
@@ -186,3 +190,43 @@
       @include mixin.position(absolute, 70%, -15%, 1);
   }
 }
+
+#left-img {
+  @include mixin.container-style(35%,90%, space-evenly, center, column);
+  
+}
+
+#right-text {
+  @include mixin.container-style(60%, 90%, space-evenly, center, column);
+  // @for $i from 1 through 5{
+  //   &>li:nth-child(#{$i}){
+  //     @include mixin.box-style(150px, 150px, var.$col-gray, 50%);
+  //     @include mixin.flex(center,center);
+  //   } 
+  // }
+  &> div{
+    @include mixin.container-style(100%, 30%, space-around, flex-start, column);
+    border: var.$solid-gray;
+
+    @for $i from 1 through 3{
+      &>div:nth-child(1){
+        @include mixin.size(40%, 10%);
+        @include mixin.font(1.1rem, 600, var.$col-7);
+        @include mixin.flex(flex-start, center);
+      }
+      
+      &>div:nth-child(2){
+        @include mixin.size(80%, 50%);
+
+      }
+    } 
+  }
+}
+
+
+
+
+
+
+
+
