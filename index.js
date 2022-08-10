@@ -22,12 +22,13 @@ pageContent.innerHTML = hashPage[0];
 //   pageContent.innerHTML = hashPage[i];
 //   pageContent.children[i].style.visibility = 'hidden';
 // }
-// console.log(pageContent.children[0].dataset.hash);
+
 // pageContent.addEventListener('click', (e) => {
 //   let hashValue =  e.target.dataset.hash;
 //   console.log(hashValue);
+//   console.log(location.hash.substring(1));
 //   for(let i = 1 ; i < hashPage.length; i++){
-//     if(hashValue === e.target.dataset.hash){
+//     if(hashValue === location.hash.substring ){
 //       // console.log('hashchange');
 //       pageContent.innerHTML = hashPage[i];
 //     }else{

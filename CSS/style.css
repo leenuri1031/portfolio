@@ -118,7 +118,14 @@
   color: #838383;
 }
 
-#list > li:nth-child(1) {
+#list > a:nth-child(1) {
+  text-decoration: none;
+  color: #838383;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+#list > a:nth-child(1) > li {
   width: 150px;
   height: 150px;
   background-color: #D9D9D9;
@@ -127,9 +134,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  cursor: pointer;
 }
-#list > li:nth-child(2) {
+#list > a:nth-child(2) {
+  text-decoration: none;
+  color: #838383;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+#list > a:nth-child(2) > li {
   width: 150px;
   height: 150px;
   background-color: #D9D9D9;
@@ -138,9 +151,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  cursor: pointer;
 }
-#list > li:nth-child(3) {
+#list > a:nth-child(3) {
+  text-decoration: none;
+  color: #838383;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+#list > a:nth-child(3) > li {
   width: 150px;
   height: 150px;
   background-color: #D9D9D9;
@@ -149,9 +168,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  cursor: pointer;
 }
-#list > li:nth-child(4) {
+#list > a:nth-child(4) {
+  text-decoration: none;
+  color: #838383;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+#list > a:nth-child(4) > li {
   width: 150px;
   height: 150px;
   background-color: #D9D9D9;
@@ -160,9 +185,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  cursor: pointer;
 }
-#list > li:nth-child(5) {
+#list > a:nth-child(5) {
+  text-decoration: none;
+  color: #838383;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+#list > a:nth-child(5) > li {
   width: 150px;
   height: 150px;
   background-color: #D9D9D9;
@@ -171,33 +202,62 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  cursor: pointer;
 }
-#list > li:nth-child(1) {
+#list > a:nth-child(1) {
   position: absolute;
   left: 15%;
   top: 5%;
   z-index: 1;
 }
-#list > li:nth-child(2) {
+#list > a:nth-child(1) > li {
+  position: absolute;
+  left: 15%;
+  top: 5%;
+  z-index: 1;
+}
+#list > a:nth-child(2) {
   position: absolute;
   left: 18%;
   top: 60%;
   z-index: 1;
 }
-#list > li:nth-child(3) {
+#list > a:nth-child(2) > li {
+  position: absolute;
+  left: 18%;
+  top: 60%;
+  z-index: 1;
+}
+#list > a:nth-child(3) {
   position: absolute;
   left: 45%;
   top: 30%;
   z-index: 1;
 }
-#list > li:nth-child(4) {
+#list > a:nth-child(3) > li {
+  position: absolute;
+  left: 45%;
+  top: 30%;
+  z-index: 1;
+}
+#list > a:nth-child(4) {
   position: absolute;
   left: 70%;
   top: 5%;
   z-index: 1;
 }
-#list > li:nth-child(5) {
+#list > a:nth-child(4) > li {
+  position: absolute;
+  left: 70%;
+  top: 5%;
+  z-index: 1;
+}
+#list > a:nth-child(5) {
+  position: absolute;
+  left: 75%;
+  top: 60%;
+  z-index: 1;
+}
+#list > a:nth-child(5) > li {
   position: absolute;
   left: 75%;
   top: 60%;

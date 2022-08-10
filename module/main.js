@@ -6,11 +6,21 @@ function mainContentsComp(props) {
   return(`
   <${props.tag} id="${props.idLeftBox}"  data-hash="Main">
         <ul id="${props.idList}" class="list">
+        <a href="#Character">
           <li data-hash="Character">Character</li>
+        </a>
+        <a href="#Intention">
           <li data-hash="Intention">Intention</li>
+        </a>
+        <a href="#Profile">
           <li data-hash="Profile">Profile</li>
+        </a>
+        <a href="#Project">
           <li data-hash="Project">Project</li>
+        </a>
+        <a href="#Contact">
           <li data-hash="Contact">Contact</li>
+        </a>
           <li></li>
           <li></li>
           <li></li>
