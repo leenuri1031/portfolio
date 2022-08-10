@@ -4,7 +4,7 @@ import { education, introduce, career } from "./text.js";
 function profileImageContentsComp(props) {
   props = typeof props === 'object' ? props : console.log('type error');
   return(` 
-  <${props.tag} id="${props.img}">
+  <${props.tag} id="${props.img}" data-hash="Profile">
   <${props.tag}>img</${props.tag}>
   <${props.tag}></${props.tag}>
   </${props.tag}>
@@ -14,7 +14,7 @@ function profileImageContentsComp(props) {
 function profiletextContentsComp(props) {
   props = typeof props === 'object' ? props : console.log('type error');
   return(` 
-  <${props.tag} id="${props.textId}">
+  <${props.tag} id="${props.textId}" data-hash="Profile">
     <${props.tag}>
       <${props.tag} class="${props.subClass}">Education</${props.tag}>
       <${props.tag} class="${props.textClass}">
