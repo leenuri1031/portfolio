@@ -3,7 +3,7 @@ import { hobby, like, motto } from "./text.js";
 function characterImageContentsComp(props){
   props = typeof props === 'object' ? props : console.log('type error');
   return(`
-  <${props.tag} id="${props.img}"  data-hash="Character">
+  <${props.tag} id="${props.img}">
     <${props.tag} class="${props.imgClass}">img</${props.tag}>
     <${props.tag} class="${props.imgClass}">img</${props.tag}>
     <${props.tag} class="${props.imgClass}">img</${props.tag}>
@@ -16,7 +16,7 @@ function characterImageContentsComp(props){
 function characterTextContentsComp(props){
   props = typeof props === 'object' ? props : console.log('type error');
   return(`
-  <${props.tag} id="${props.textId}"  data-hash="Character">
+  <${props.tag} id="${props.textId}">
     <${props.tag}>
       <${props.tag}>Hobby</${props.tag}>
       <${props.tag}>${hobby}</${props.tag}>
@@ -45,8 +45,12 @@ const characterContentObj = {
 
 const characterContent = () => {
   return(
-    `${characterImageContentsComp(characterContentObj)}
-    ${characterTextContentsComp(characterContentObj)}`
+    `
+    <div id="character"  data-hash="Character">
+      ${characterImageContentsComp(characterContentObj)}
+      ${characterTextContentsComp(characterContentObj)}
+    </div>
+    `
   );
 }
 

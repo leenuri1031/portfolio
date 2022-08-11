@@ -162,6 +162,10 @@
   }
 }
 
+#profile{
+  @include mixin.container-style(100%, 100%, space-around, center);
+}
+
 #img-box{
   @include mixin.container-style(35%,90%, flex-start, center, column);
   padding: 5vh;
@@ -228,6 +232,10 @@
       @include mixin.box-style(150px, 150px, var.$col-gray, 50%);
       @include mixin.position(absolute, 70%, -15%, 1);
   }
+}
+
+#character{
+  @include mixin.container-style(100%, 100%, space-around, center);
 }
 
 #left-img {

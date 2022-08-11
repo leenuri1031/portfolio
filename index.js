@@ -14,9 +14,30 @@ const menuBox = sections[1].children[1];
 // hashchage에 따라 컨텐츠 내용 바뀔 수 있도록
 // hash가 ===  같다면 innerHTML의 내용을 배열 hashPage에서 해당하는 해쉬 내용으로 페이지 변환 시키기 
 
-const hashPage = [`${mainContent}`, `${profileContent}`, `${characterContent}` ];
+// const hashPage = [`${mainContent}`, `${profileContent}`, `${characterContent}` ];
 
-pageContent.innerHTML = hashPage[0];
+// pageContent.innerHTML = characterContent;
+
+// pageContent.innerHTML = `${mainContent} ${profileContent} ${characterContent} `;
+
+// for(let i = 0; i < pageContent.children.length; i++){
+//   pageContent.children[i].style.visibility = 'hidden';
+//   // console.log(pageContent.children[i].dataset.hash);
+// }
+
+// pageContent.addEventListener('click', (e)=> {
+//   let hashValue = e.target.dataset.hash;
+//   console.log(hashValue);
+
+//   for(let i = 0; i < pageContent.children.length; i++){
+//     if(hashValue === pageContent.children[i].dataset.hash){
+//       pageContent.children[i].style.visibility = 'visivle';
+//     } else {
+//       pageContent.children[i].style.visibility = 'hidden';
+//     }
+//   }
+// });
+
 
 // for(let i = 0; i < hashPage.length; i++){
 //   pageContent.innerHTML = hashPage[i];

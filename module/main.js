@@ -4,7 +4,7 @@
 function mainContentsComp(props) {
   props = typeof props === 'object' ? props : console.log('type error');
   return(`
-  <${props.tag} id="${props.idLeftBox}"  data-hash="Main">
+  <${props.tag} id="${props.idLeftBox}">
         <ul id="${props.idList}" class="list">
         <a href="#Character">
           <li data-hash="Character">Character</li>
