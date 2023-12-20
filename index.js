@@ -1,7 +1,7 @@
 import mainContent from "./module/main.js"
 
 const root = document.getElementById('root');
-const sections = root.children;
+// const sections = root.children;
 
 console.log(root);
 // console.log(sections.length);
@@ -11,5 +11,5 @@ console.log(root);
 
 // console.log(mainContent);
 
-sections[1].innerHTML = mainContent ; 
+// sections[1].innerHTML = mainContent ; 
 

@@ -11,9 +11,9 @@
   @include mixin.font(2.5rem, 600, var.$col-1);
 }
 
-.container {
-  @include mixin.container-style(100%, 85%, center, center);
-}
+// .container {
+//   @include mixin.container-style(100%, 85%, center, center);
+// }
 
 .list {
   list-style-type: none;
@@ -25,13 +25,21 @@
 // ------------------------------------------- class_setting
 
 #root {
-  @include mixin.root;
+  @include mixin.root(100vw, 100vh);
   @include mixin.flex(center, center, column);
+  background-color: aliceblue;
+
+  // &>section{
+  //   border: solid 1px violet;
+  //  }
+
+  &>section:nth-child(2){
+    @include mixin.container-style(100%, 85%, space-evenly, center); 
+  }
 }
 
 #left-box{
   @include mixin.container-style(85%, 100%, center, center);
-  // border:var.$solid-gray ;
   color: var.$col-dark-gray;
 }
 
@@ -66,6 +74,11 @@
   &>li:nth-child(6){
     @include mixin.box-style(80px, 80px, var.$col-gray, 50%);
     @include mixin.position(absolute, 5%, 40%, 1);
+  }
+
+  &>li:nth-child(7){
+    @include mixin.box-style(80px, 80px, var.$col-gray, 50%);
+    @include mixin.position(absolute, 90%, 15%, 1);
   }
 
 }

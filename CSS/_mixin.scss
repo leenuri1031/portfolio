@@ -12,9 +12,9 @@
   flex-direction: $flexdirection;
 }
 
-@mixin root {
-  width: var.$width-root;
-  height: var.$height-root;
+@mixin root($w, $h) {
+  width: $w;
+  height: $h;
 }  
 
 
