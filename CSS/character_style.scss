@@ -32,60 +32,90 @@
 }
 
 #left-box{
-  @include mixin.container-style(85%, 100%, space-around, center);
+  @include mixin.container-style(85%, 100%, center, center);
   color: var.$col-dark-gray;
 
   &>div:first-child{
-    @include mixin.container-style(30%,100%,space-around,center,column);
+    @include mixin.container-style(40%,100%,space-around,center,column);
     position: relative;
-    border: solid 1px darkblue;
+    // border: solid 1px darkblue;
+
+    &>div:nth-child(1){
+      @include mixin.box-style(300px, 300px, var.$col-gray, 50%);
+      @include mixin.flex(center, center);
+      @include mixin.position(absolute,20%,25%);
+    }
+    
+    @for $i from 2 through 4{
+      &>div:nth-child(#{$i}){
+        @include mixin.box-style(100px, 100px, var.$col-gray, 50%);
+        @include mixin.flex(center,center);
+      } 
+    }
+
+    &>div:nth-child(2){
+      @include mixin.position(absolute, 18%, 80%, 1 );
+    }
+  
+    &>div:nth-child(3){
+      @include mixin.position(absolute, 200%, -5%,1 );
+    }
+  
+    &>div:nth-child(4){
+      @include mixin.position(absolute, 220%, 80%, 1 );
+    }
   }
 
   &>div:last-child{
-    @include mixin.container-style(65%,100%,space-around,center,column);
-    border: 1px dotted rosybrown;
+    @include mixin.container-style(50%,100%,space-around,center,column);
+    // border: 1px dotted rosybrown;
+
+    &>div{
+      @include mixin.container-style(80%,30%,center,flex-start,column);
+      // border: 1px solid lawngreen;
+
+      &>div:first-child{
+        @include mixin.size(80%, 20%);
+        // background-color: antiquewhite;
+      }
+
+      &>div:last-child{
+        @include mixin.size(80%,60%);
+        // background-color: burlywood;
+      }
+    }
+
+    &>div:nth-child(1){
+      &>div{
+        @include mixin.flex(flex-start,center);
+      }
+
+      &>div:last-child{
+        text-align: left;
+      }
+    }
+
+    &>div:nth-child(2){
+      &>div{
+        @include mixin.flex(flex-end,center);
+      }
+
+      &>div:last-child{
+        text-align: right;
+      }
+    }
+
+    &>div:nth-child(3){
+      &>div{
+        @include mixin.flex(flex-start,center);
+      }
+
+      &>div:last-child{
+        text-align: left;
+      }
+    }
   }
 }
-
-// #list  { 
-//   @for $i from 1 through 5{
-//     &>li:nth-child(#{$i}){
-//       @include mixin.box-style(150px, 150px, var.$col-gray, 50%);
-//       @include mixin.flex(center,center);
-//     } 
-//   }
-
-//   &>li:nth-child(1){
-//     @include mixin.position(absolute, 15%, 5%, 1);
-//   }
-
-//   &>li:nth-child(2){
-//     @include mixin.position(absolute, 18%, 60%, 1 );
-//   }
-
-//   &>li:nth-child(3){
-//     @include mixin.position(absolute, 45%, 30%, 1 );
-//   }
-
-//   &>li:nth-child(4){
-//     @include mixin.position(absolute, 70%, 5%, 1 );
-//   }
-
-//   &>li:nth-child(5){
-//     @include mixin.position(absolute, 75%, 60%, 1);
-//   }
-
-//   &>li:nth-child(6){
-//     @include mixin.box-style(80px, 80px, var.$col-gray, 50%);
-//     @include mixin.position(absolute, 5%, 40%, 1);
-//   }
-
-//   &>li:nth-child(7){
-//     @include mixin.box-style(80px, 80px, var.$col-gray, 50%);
-//     @include mixin.position(absolute, 90%, 15%, 1);
-//   }
-
-// }
 
 #right-box{
   @include mixin.container-style(15%,100%, space-around, center, column);
