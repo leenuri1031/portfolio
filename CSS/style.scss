@@ -48,6 +48,7 @@
     &>li:nth-child(#{$i}){
       @include mixin.box-style(150px, 150px, var.$col-gray, 50%);
       @include mixin.flex(center,center);
+      cursor: pointer;
     } 
   }
 

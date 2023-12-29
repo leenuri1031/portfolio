@@ -73,6 +73,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  cursor: pointer;
 }
 #list > li:nth-child(2) {
   width: 150px;
@@ -83,6 +84,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  cursor: pointer;
 }
 #list > li:nth-child(3) {
   width: 150px;
@@ -93,6 +95,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  cursor: pointer;
 }
 #list > li:nth-child(4) {
   width: 150px;
@@ -103,6 +106,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  cursor: pointer;
 }
 #list > li:nth-child(5) {
   width: 150px;
@@ -113,6 +117,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  cursor: pointer;
 }
 #list > li:nth-child(1) {
   position: absolute;
