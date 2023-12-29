@@ -63,6 +63,11 @@
   flex-direction: $flexdirection;
 }
 
+@mixin box-bgcol($col, $radius:0){
+  background-color: $col;
+  border-radius: $radius;
+}
+
 
 // .animation{
 //   animation-duration: 5s;
